@@ -36,11 +36,11 @@ class SvgIntegration extends Integration {
     WidgetBuilder? placeholderBuilder,
     String? semanticsLabel,
     bool excludeFromSemantics = false,
+    Clip clipBehavior = Clip.hardEdge,
     SvgTheme theme = const SvgTheme(),
     ColorFilter? colorFilter,
     @deprecated Color? color,
     @deprecated BlendMode colorBlendMode = BlendMode.srcIn,
-    @deprecated Clip? clipBehavior,
     @deprecated bool cacheColorFilter = false,
   }) {
     return SvgPicture.asset(
